@@ -1,0 +1,15 @@
+Hello world
+<button (click)="destroyCMP()">Click to destroy</button>
+
+<lab01-page 
+*ngIf="bShow" 
+[item]="name"
+(newItemEvent) = "addItem($event)"
+></lab01-page>
+
+<div *ngFor="let index of items">
+    <div>
+        name {{index}}
+    </div>
+</div>
+
